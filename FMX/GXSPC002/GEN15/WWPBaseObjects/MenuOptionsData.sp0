@@ -1,0 +1,525 @@
+spec_i([ mnproc,4,'Menu Options Data','WWPBaseObjects\MenuOptionsData',0,por,'16_0_2-131213' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS',ÉÌË)).
+rule_i(0,datastore(1,'CC_USER_ID',sa)).
+rule_i(0,datastore(1,'CC_SERVER','CETIF-478110')).
+rule_i(0,datastore(1,'CC_DBNAME','FMX')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD',Ü5Ú2ÌK)).
+rule_i(0,datastore(1,'USER_ID',sa)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CETIF-478110')).
+rule_i(0,datastore(1,'CS_DBNAME','FMX')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','WWPBaseObjects.MenuOptionsData')).
+rule_i(0,prop('Folder',o(8,'WWPBaseObjects\MenuData'))).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop('OutputCollectionName','MenuOptionsData')).
+rule_i(0,prop('OutputCollection','0')).
+rule_i(0,prop('OutputSDT',o(26,'WWPBaseObjects\DVelop_Menu'))).
+rule_i(0,prop(idINFER_SDT,idINFER_STRUCTURE_NO)).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
+rule_i(0,prop(idISWEBSERVICE,'0')).
+rule_i(0,prop('ObjDesc','Menu Options Data')).
+rule_i(0,prop('ObjName','MenuOptionsData')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Atualizar"','5' ]) ],[],[],[])).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'Gxm2rootcol' ],[])).
+rule_i(0,parmio([ [ 'Gxm2rootcol',out ] ])).
+ 
+a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,3,[]).
+v_i(f,o,3,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('GXV2',[ 'GXV2',int,8,0,'',0,'','',14 ]).
+attri_i('GXV1',[ 'GXV1',o(objectcollection('WWPBaseObjects\ProgramNames.ProgramName')),0,0,'',0,'','',13 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
+attri_i('Gxm4dvelop_menu_subitems',[ 'Gxm4dvelop_menu_subitems',o('WWPBaseObjects\DVelop_Menu.Item'),0,0,'',0,'Gxm4dvelop_menu_subitems','',10 ]).
+attri_i('Gxm1dvelop_menu',[ 'Gxm1dvelop_menu',o('WWPBaseObjects\DVelop_Menu.Item'),0,0,'',0,'Gxm1dvelop_menu','',9 ]).
+attri_i('Gxm2rootcol',[ 'Gxm2rootcol',o(objectcollection('WWPBaseObjects\DVelop_Menu.Item')),0,0,'',0,'Gxm2rootcol','',8 ]).
+attri_i('Gxv3skipcount',[ 'Gxv3skipcount',int,8,0,'',1,'Gxv3skipcount','',7 ]).
+attri_i('Programname',[ 'ProgramName',o('WWPBaseObjects\ProgramNames.ProgramName'),0,0,'',0,'Program Name','',6 ]).
+attri_i('Id',[ id,int,4,0,'ZZZ9',0,id,'',5 ]).
+ 
+ 
+ 
+ 
+ 
+function_i(1,'GXV1',yes,udp,o(1,'WWPBaseObjects\ListWWPPrograms'),[],30,'GXV1',[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(4,1,1,cmd,4,[ t('',107,4,0),t('Id',23,4,0),t(=,10,4,0),t('0',3,4,0) ]).
+b_line_i(6,1,1,cmd,4,[ t('',107,4,0),t('Gxm1dvelop_menu',23,4,0),t(=,10,4,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,6,0),t(')',4,6,0) ],n ],46,4,0) ]).
+b_line_i([ 6,1 ],1,1,cmd,4,[ t('',107,4,0),t([ t('Gxm2rootcol',23,6,0),t('add(',1,6,0) ],31,6,0),t('Gxm1dvelop_menu',23,4,0),t(')',4,4,0) ]).
+b_line_i(8,1,1,cmd,6,[ t('',107,6,0),t('Id',23,6,0),t(=,10,6,0),t('Id',23,6,0),t(+,5,6,0),t('1',3,6,0) ]).
+b_line_i(9,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Id',3,6,0) ],29,6,0),t(=,10,6,0),t('str(',1,6,0),t('Id',23,6,0),t(',',7,6,0),t(4,3,6,0),t(',',7,6,0),t(0,3,6,0),t(')',4,6,0) ]).
+b_line_i(10,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Tooltip',3,6,0) ],29,6,0),t(=,10,6,0),t('""',3,6,0) ]).
+b_line_i(11,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Link',3,6,0) ],29,6,0),t(=,10,6,0),t('link(',1,6,0),t(o(13,'WWPBaseObjects\Home'),28,6,0),t(')',4,6,0) ]).
+b_line_i(12,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Linktarget',3,6,0) ],29,6,0),t(=,10,6,0),t('""',3,6,0) ]).
+b_line_i(13,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Iconclass',3,6,0) ],29,6,0),t(=,10,6,0),t('"menu-icon fa fa-home"',3,6,0) ]).
+b_line_i(14,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Caption',3,6,0) ],29,6,0),t(=,10,6,0),t('"Inicio"',3,6,0) ]).
+b_line_i(17,1,1,cmd,6,[ t('',107,6,0),t('Gxm1dvelop_menu',23,6,0),t(=,10,6,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,17,0),t(')',4,17,0) ],n ],46,6,0) ]).
+b_line_i([ 17,1 ],1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm2rootcol',23,17,0),t('add(',1,17,0) ],31,17,0),t('Gxm1dvelop_menu',23,6,0),t(')',4,6,0) ]).
+b_line_i(19,1,1,cmd,8,[ t('',107,8,0),t('Id',23,8,0),t(=,10,8,0),t('Id',23,8,0),t(+,5,8,0),t('1',3,8,0) ]).
+b_line_i(20,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Id',3,8,0) ],29,8,0),t(=,10,8,0),t('str(',1,8,0),t('Id',23,8,0),t(',',7,8,0),t(4,3,8,0),t(',',7,8,0),t(0,3,8,0),t(')',4,8,0) ]).
+b_line_i(21,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Tooltip',3,8,0) ],29,8,0),t(=,10,8,0),t('""',3,8,0) ]).
+b_line_i(22,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Link',3,8,0) ],29,8,0),t(=,10,8,0),t('""',3,8,0) ]).
+b_line_i(23,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Linktarget',3,8,0) ],29,8,0),t(=,10,8,0),t('""',3,8,0) ]).
+b_line_i(24,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Iconclass',3,8,0) ],29,8,0),t(=,10,8,0),t('"menu-icon fa fa-edit"',3,8,0) ]).
+b_line_i(25,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Caption',3,8,0) ],29,8,0),t(=,10,8,0),t('"Painel Gestão"',3,8,0) ]).
+b_line_i(30,1,1,cmd,8,[ t('',107,8,0),t('Gxv3skipcount',23,8,0),t(=,10,8,0),t(0,3,8,0) ]).
+b_line_i([ 30,1 ],1,1,cmd,8,[ t('',107,8,0),t('GXV2',23,8,0),t(=,10,8,0),t(1,3,8,0) ]).
+b_line_i([ [ 30,1 ],1 ],1,1,cmd,8,[ t('',107,8,0),t('GXV1',23,8,0),t(=,10,8,0),t('udp(',1,8,0),t('GXV1',3,8,0),t(30,3,8,0),t(')',4,8,0) ]).
+b_line_i([ [ 30,1 ],2 ],1,1,cmd,8,[ t('',114,8,0),t('GXV2',23,8,0),t(<=,10,8,0),t([ t('GXV1',23,[ 30,1 ],0),t('Count',3,[ 30,1 ],0) ],29,[ 30,1 ],0) ]).
+b_line_i([ [ 30,1 ],3 ],1,1,cmd,8,[ t('',107,8,0),t('Programname',23,8,0),t(=,10,8,0),t([ t('GXV1',23,8,0),t('item(',1,8,0) ],31,8,0),t('GXV2',23,8,0),t(')',4,8,0) ]).
+b_line_i([ 30,5 ],1,1,cmd,8,[ t('',107,8,0),t('Gxv3skipcount',23,8,0),t(=,10,8,0),t('Gxv3skipcount',23,8,0),t(+,5,8,0),t(1,3,8,0) ]).
+b_line_i([ 30,6 ],1,1,cmd,8,[ t('',107,8,0),t('Gxm4dvelop_menu_subitems',23,8,0),t(=,10,8,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,30,0),t(')',4,30,0) ],n ],46,8,0) ]).
+b_line_i([ 30,7 ],1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Subitems',3,30,0),t('add(',1,30,0) ],31,30,0),t('Gxm4dvelop_menu_subitems',23,8,0),t(')',4,8,0) ]).
+b_line_i(32,1,1,cmd,10,[ t('',107,10,0),t('Id',23,10,0),t(=,10,10,0),t('Id',23,10,0),t(+,5,10,0),t('1',3,10,0) ]).
+b_line_i(33,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm4dvelop_menu_subitems',23,10,0),t('Id',3,10,0) ],29,10,0),t(=,10,10,0),t('str(',1,10,0),t('Id',23,10,0),t(',',7,10,0),t(4,3,10,0),t(',',7,10,0),t(0,3,10,0),t(')',4,10,0) ]).
+b_line_i(34,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm4dvelop_menu_subitems',23,10,0),t('Tooltip',3,10,0) ],29,10,0),t(=,10,10,0),t('""',3,10,0) ]).
+b_line_i(35,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm4dvelop_menu_subitems',23,10,0),t('Link',3,10,0) ],29,10,0),t(=,10,10,0),t([ t('Programname',23,10,0),t('Link',3,10,0) ],29,10,0) ]).
+b_line_i(36,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm4dvelop_menu_subitems',23,10,0),t('Linktarget',3,10,0) ],29,10,0),t(=,10,10,0),t('""',3,10,0) ]).
+b_line_i(37,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm4dvelop_menu_subitems',23,10,0),t('Iconclass',3,10,0) ],29,10,0),t(=,10,10,0),t('""',3,10,0) ]).
+b_line_i(38,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm4dvelop_menu_subitems',23,10,0),t('Caption',3,10,0) ],29,10,0),t(=,10,10,0),t([ t('Programname',23,10,0),t('Description',3,10,0) ],29,10,0) ]).
+b_line_i(39,1,1,cmd,10,[ t('',109,10,0),t('4',3,10,16),t(<>,10,10,0),t(0,3,10,0),t('.AND.',9,10,0),t('Gxv3skipcount',23,10,0),t(>=,10,10,0),t('4',3,10,16) ]).
+b_line_i([ 39,1 ],1,1,cmd,10,[ t('',139,10,0) ]).
+b_line_i([ 39,2 ],1,1,cmd,10,[ t('',111,10,0) ]).
+b_line_i([ [ 39,3 ],1 ],1,1,cmd,10,[ t('',107,10,0),t('GXV2',23,10,0),t(=,10,10,0),t('GXV2',23,10,0),t(+,5,10,0),t(1,3,10,0) ]).
+b_line_i([ [ 39,3 ],2 ],1,1,cmd,10,[ t('',115,10,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,52,0 ],name,'WWPBaseObjects\ProgramNames').
+struct_dt_i([ 26,52,0 ],namespace,'FMX').
+struct_dt_i([ 26,52,0 ],'ObjName','ProgramNames').
+struct_dt_i([ 26,52,0 ],'ObjDesc','Program Names').
+struct_dt_i([ 26,52,0 ],'ExternalName','ProgramNames').
+struct_dt_i([ 26,52,0 ],'ExternalNamespace','FMX').
+struct_dt_i([ 26,52,0 ],collection,'True').
+struct_dt_i([ 26,52,0 ],datatype,[ 26,52,85 ]).
+struct_dt_i([ 26,52,0 ],'CollectionItemName','ProgramName').
+struct_dt_i([ 26,52,0 ],'XmlName','').
+struct_dt_i([ 26,52,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,52,0 ],'XmlNamespace','').
+struct_dt_i([ 26,52,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,52,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,52,0 ],'JsonName','').
+struct_dt_i([ 26,52,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,52,85 ],name,'ProgramName').
+struct_dt_i([ 26,52,85 ],namespace,'FMX.ProgramNames').
+struct_dt_i([ 26,61,0 ],name,'WWPBaseObjects\DVelop_Menu').
+struct_dt_i([ 26,61,0 ],namespace,'FMX').
+struct_dt_i([ 26,61,0 ],'ObjName','DVelop_Menu').
+struct_dt_i([ 26,61,0 ],'ObjDesc','DVelop Menu').
+struct_dt_i([ 26,61,0 ],'ExternalName','DVelop_Menu').
+struct_dt_i([ 26,61,0 ],'ExternalNamespace','FMX').
+struct_dt_i([ 26,61,0 ],collection,'True').
+struct_dt_i([ 26,61,0 ],datatype,[ 26,61,95 ]).
+struct_dt_i([ 26,61,0 ],'CollectionItemName','Item').
+struct_dt_i([ 26,61,0 ],'XmlName','').
+struct_dt_i([ 26,61,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,61,0 ],'XmlNamespace','').
+struct_dt_i([ 26,61,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,61,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,61,0 ],'JsonName','').
+struct_dt_i([ 26,61,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,61,95 ],name,'Item').
+struct_dt_i([ 26,61,95 ],namespace,'FMX.DVelop_Menu').
+struct_dt_i([ 26,52,0 ],fullname,'WWPBaseObjects\ProgramNames').
+struct_dt_i([ 26,52,85 ],fullname,'WWPBaseObjects\ProgramNames.ProgramName').
+struct_dt_i([ 26,61,0 ],fullname,'WWPBaseObjects\DVelop_Menu').
+struct_dt_i([ 26,61,95 ],fullname,'WWPBaseObjects\DVelop_Menu.Item').
+struct_dt_i([ 26,52,0 ],camelname,'Wwpbaseobjects\programnames').
+struct_dt_i([ 26,52,85 ],camelname,'Programname').
+struct_dt_i([ 26,61,0 ],camelname,'Wwpbaseobjects\dvelop_menu').
+struct_dt_i([ 26,61,95 ],camelname,'Item').
+struct_dt_i([ 26,52,0 ],modified,yes).
+struct_dt_i([ 26,52,85 ],modified,yes).
+struct_dt_i([ 26,61,0 ],modified,yes).
+struct_dt_i([ 26,61,95 ],modified,yes).
+ 
+struct_dt_elem_i([ 26,52,85 ],1,name,'Name').
+struct_dt_elem_i([ 26,52,85 ],1,camelname,'Name').
+struct_dt_elem_i([ 26,52,85 ],1,basedon,40).
+struct_dt_elem_i([ 26,52,85 ],1,length,256).
+struct_dt_elem_i([ 26,52,85 ],1,decimals,0).
+struct_dt_elem_i([ 26,52,85 ],1,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,52,85 ],1,pic,'').
+struct_dt_elem_i([ 26,52,85 ],1,collection,'False').
+struct_dt_elem_i([ 26,52,85 ],1,'ExternalName','Name').
+struct_dt_elem_i([ 26,52,85 ],1,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,52,85 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,52,85 ],1,'XmlName','').
+struct_dt_elem_i([ 26,52,85 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,52,85 ],1,soaptype,'').
+struct_dt_elem_i([ 26,52,85 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,52,85 ],1,'JsonName','').
+struct_dt_elem_i([ 26,52,85 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,52,85 ],2,name,'Description').
+struct_dt_elem_i([ 26,52,85 ],2,camelname,'Description').
+struct_dt_elem_i([ 26,52,85 ],2,length,255).
+struct_dt_elem_i([ 26,52,85 ],2,decimals,0).
+struct_dt_elem_i([ 26,52,85 ],2,type,[ 13,255,0 ]).
+struct_dt_elem_i([ 26,52,85 ],2,pic,'').
+struct_dt_elem_i([ 26,52,85 ],2,collection,'False').
+struct_dt_elem_i([ 26,52,85 ],2,'ExternalName','Description').
+struct_dt_elem_i([ 26,52,85 ],2,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,52,85 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,52,85 ],2,'XmlName','').
+struct_dt_elem_i([ 26,52,85 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,52,85 ],2,soaptype,'').
+struct_dt_elem_i([ 26,52,85 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,52,85 ],2,'JsonName','').
+struct_dt_elem_i([ 26,52,85 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,52,85 ],3,name,'Link').
+struct_dt_elem_i([ 26,52,85 ],3,camelname,'Link').
+struct_dt_elem_i([ 26,52,85 ],3,basedon,19).
+struct_dt_elem_i([ 26,52,85 ],3,length,1000).
+struct_dt_elem_i([ 26,52,85 ],3,decimals,0).
+struct_dt_elem_i([ 26,52,85 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,52,85 ],3,pic,'').
+struct_dt_elem_i([ 26,52,85 ],3,collection,'False').
+struct_dt_elem_i([ 26,52,85 ],3,'ExternalName','Link').
+struct_dt_elem_i([ 26,52,85 ],3,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,52,85 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,52,85 ],3,'XmlName','').
+struct_dt_elem_i([ 26,52,85 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,52,85 ],3,soaptype,'').
+struct_dt_elem_i([ 26,52,85 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,52,85 ],3,'JsonName','').
+struct_dt_elem_i([ 26,52,85 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],1,name,'Id').
+struct_dt_elem_i([ 26,61,95 ],1,camelname,id).
+struct_dt_elem_i([ 26,61,95 ],1,length,40).
+struct_dt_elem_i([ 26,61,95 ],1,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],1,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],1,pic,'').
+struct_dt_elem_i([ 26,61,95 ],1,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],1,'ExternalName',id).
+struct_dt_elem_i([ 26,61,95 ],1,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],1,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],1,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],1,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],2,name,'Tooltip').
+struct_dt_elem_i([ 26,61,95 ],2,camelname,tooltip).
+struct_dt_elem_i([ 26,61,95 ],2,length,40).
+struct_dt_elem_i([ 26,61,95 ],2,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],2,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],2,pic,'').
+struct_dt_elem_i([ 26,61,95 ],2,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],2,'ExternalName',tooltip).
+struct_dt_elem_i([ 26,61,95 ],2,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],2,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],2,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],2,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],3,name,'Link').
+struct_dt_elem_i([ 26,61,95 ],3,camelname,link).
+struct_dt_elem_i([ 26,61,95 ],3,length,40).
+struct_dt_elem_i([ 26,61,95 ],3,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],3,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],3,pic,'').
+struct_dt_elem_i([ 26,61,95 ],3,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],3,'ExternalName',link).
+struct_dt_elem_i([ 26,61,95 ],3,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],3,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],3,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],3,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],4,name,'Linktarget').
+struct_dt_elem_i([ 26,61,95 ],4,camelname,linkTarget).
+struct_dt_elem_i([ 26,61,95 ],4,length,40).
+struct_dt_elem_i([ 26,61,95 ],4,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],4,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],4,pic,'').
+struct_dt_elem_i([ 26,61,95 ],4,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],4,'ExternalName',linkTarget).
+struct_dt_elem_i([ 26,61,95 ],4,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],4,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],4,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],4,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],5,name,'Iconclass').
+struct_dt_elem_i([ 26,61,95 ],5,camelname,iconClass).
+struct_dt_elem_i([ 26,61,95 ],5,length,40).
+struct_dt_elem_i([ 26,61,95 ],5,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],5,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],5,pic,'').
+struct_dt_elem_i([ 26,61,95 ],5,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],5,'ExternalName',iconClass).
+struct_dt_elem_i([ 26,61,95 ],5,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],5,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],5,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],5,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],5,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],5,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],6,name,'Caption').
+struct_dt_elem_i([ 26,61,95 ],6,camelname,caption).
+struct_dt_elem_i([ 26,61,95 ],6,length,40).
+struct_dt_elem_i([ 26,61,95 ],6,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],6,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],6,pic,'').
+struct_dt_elem_i([ 26,61,95 ],6,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],6,'ExternalName',caption).
+struct_dt_elem_i([ 26,61,95 ],6,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],6,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],6,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],6,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],6,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],6,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],6,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],6,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],7,name,'Authorizationkey').
+struct_dt_elem_i([ 26,61,95 ],7,camelname,authorizationKey).
+struct_dt_elem_i([ 26,61,95 ],7,length,40).
+struct_dt_elem_i([ 26,61,95 ],7,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],7,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],7,pic,'').
+struct_dt_elem_i([ 26,61,95 ],7,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],7,'ExternalName',authorizationKey).
+struct_dt_elem_i([ 26,61,95 ],7,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],7,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],7,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],7,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],7,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],7,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],7,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],7,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],8,name,'Additionaldata').
+struct_dt_elem_i([ 26,61,95 ],8,camelname,additionalData).
+struct_dt_elem_i([ 26,61,95 ],8,length,40).
+struct_dt_elem_i([ 26,61,95 ],8,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],8,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,61,95 ],8,pic,'').
+struct_dt_elem_i([ 26,61,95 ],8,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],8,'ExternalName',additionalData).
+struct_dt_elem_i([ 26,61,95 ],8,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],8,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],8,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],8,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],8,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],8,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],8,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],8,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],9,name,'Submenuimage').
+struct_dt_elem_i([ 26,61,95 ],9,camelname,submenuImage).
+struct_dt_elem_i([ 26,61,95 ],9,length,4).
+struct_dt_elem_i([ 26,61,95 ],9,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],9,type,[ 7,4,0 ]).
+struct_dt_elem_i([ 26,61,95 ],9,pic,'').
+struct_dt_elem_i([ 26,61,95 ],9,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],9,'ExternalName',submenuImage).
+struct_dt_elem_i([ 26,61,95 ],9,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],9,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],9,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],9,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],9,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],9,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],9,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],9,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],10,name,'Submenuimage_gxi').
+struct_dt_elem_i([ 26,61,95 ],10,camelname,submenuImage_GXI).
+struct_dt_elem_i([ 26,61,95 ],10,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],10,isadd,'True').
+struct_dt_elem_i([ 26,61,95 ],10,length,2048).
+struct_dt_elem_i([ 26,61,95 ],10,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],10,type,[ 13,2048,0 ]).
+struct_dt_elem_i([ 26,61,95 ],11,name,'Subitems').
+struct_dt_elem_i([ 26,61,95 ],11,camelname,subItems).
+struct_dt_elem_i([ 26,61,95 ],11,length,4).
+struct_dt_elem_i([ 26,61,95 ],11,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],11,type,[ [ 26,61,0 ],4,0 ]).
+struct_dt_elem_i([ 26,61,95 ],11,pic,'').
+struct_dt_elem_i([ 26,61,95 ],11,collection,'True').
+struct_dt_elem_i([ 26,61,95 ],11,'ExternalName',subItems).
+struct_dt_elem_i([ 26,61,95 ],11,'ExternalNamespace','FMX').
+struct_dt_elem_i([ 26,61,95 ],11,'CollectionItemName','Item').
+struct_dt_elem_i([ 26,61,95 ],11,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],11,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,61,95 ],11,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],11,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],11,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],11,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,61,95 ],11,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],11,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,52,85 ],3,pic,'ZZ9.99').
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,13,'WWPBASEOBJECTS\LISTWWPPROGRAMS',[ [ o(objectcollection('WWPBaseObjects\ProgramNames.ProgramName')),0,0,0 ] ],[ [ 'ProgramNames',out,[] ] ]).
+pgm_parm_i(web,11,'WWPBASEOBJECTS\HOME',[],[]).
+ 
+pgm_callprotocol_i(mnproc,4,'WWPBASEOBJECTS\MENUOPTIONSDATA','INTERNAL','').
+pgm_callprotocol_i(proc,13,'WWPBASEOBJECTS\LISTWWPPROGRAMS','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,11,'WWPBASEOBJECTS\HOME','INTERNAL','Unsecure').
+ 
+ 
+pgm_main_info_i(web,11,'WWPBASEOBJECTS\HOME',[ 15,'WWPBASEOBJECTS\HOME','','','','','INTERNAL' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

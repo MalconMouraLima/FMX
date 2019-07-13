@@ -1,0 +1,330 @@
+spec_i([ proc,39,'Calcula o desconto/frete','PRC_CalculaDescFrete',78,por,'16_0_2-131213' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 18,15,14,19 ] ] ],[ [ [ 3 ],[] ] ],[ 13 ],'IPARAMETRO',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [ c([ t(14,2),t(<=,10),t('Pedidodt',23) ],[ 14 ]),c([ t(15,2),t(>=,10),t('Pedidodt',23) ],[ 15 ]),c([ t(18,2),t(<=,10),t('Pedidototal',23) ],[ 18 ]) ] ]).
+ 
+ 
+ 
+level_option_i(2,usr_condition,y).
+ 
+ta_i(2,[ [ [ 3,18 ],[ 3,15 ],[ 3,14 ],[ 3,19 ] ] ]).
+ 
+las_i(2,[ [ 18,15,14,19 ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS',ÉÌË)).
+rule_i(0,datastore(1,'CC_USER_ID',sa)).
+rule_i(0,datastore(1,'CC_SERVER','CETIF-478110')).
+rule_i(0,datastore(1,'CC_DBNAME','FMX')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD',Ü5Ú2ÌK)).
+rule_i(0,datastore(1,'USER_ID',sa)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CETIF-478110')).
+rule_i(0,datastore(1,'CS_DBNAME','FMX')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','PRC_CalculaDescFrete')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('GENERATE_ILE','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Calcula o desconto/frete')).
+rule_i(0,prop('ObjName','PRC_CalculaDescFrete')).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'Pedidodt','Pedidototal','Valor' ],[])).
+rule_i(0,parmio([ [ 'Pedidodt',in ],[ 'Pedidototal',in ],[ 'Valor',out ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,3,[],[ [],'IPARAMETRO',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,18).
+v_i(t,o,2,15).
+v_i(t,o,2,14).
+v_i(t,o,2,19).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',16 ]).
+attri_i(13,[ 'ParametroID',int,4,0,'ZZZ9',0,'Id','',0 ]).
+attri_i(14,[ 'ParametroDtVigenciaIni',date,8,0,'99/99/99',0,'Data de Vigência Inicial','',0 ]).
+attri_i(15,[ 'ParametroDtVigenciaFim',date,8,0,'99/99/99',0,'Data de Vigência Final','',0 ]).
+attri_i(18,[ 'ParametroValor',int,12,2,'ZZZ,ZZZ,ZZ9.99',0,'Valor','',0 ]).
+attri_i(19,[ 'ParametroPercentual',int,6,2,'ZZ9.99',0,'Percentual','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',13 ]).
+attri_i('Pedidoretirada',[ 'PedidoRetirada',boolean,4,0,'',0,'Retirar no Local?','',12 ]).
+attri_i('Valor',[ valor,int,12,2,'ZZZZZZZZ9.99',0,valor,'',9 ]).
+attri_i('Pedidototal',[ 'PedidoTotal',int,12,2,'R$ Z,ZZZ,ZZ,ZZ9.99',0,'Total','',8 ]).
+attri_i('Pedidodt',[ 'PedidoDt',date,8,0,'99/99/99',0,'Data do Pedido','',10 ]).
+ 
+table_i(3,[ 'Parametro',[ 13,14,15,18,19 ],'Parametro','Parametro' ]).
+ 
+index_i(3,[ 'IPARAMETRO',u,[ 13 ],'IParametro' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+enumerated_i(2,16,88).
+ 
+enum_value_i(2,88,'"D"','Desconto','"Desconto"',[ none ]).
+enum_value_i(2,88,'"F"','Frete','"Frete"',[ none ]).
+ 
+enum_value_info_i(2,88,'TipoParametro').
+ 
+enum_type_i(2,88,char,1,0).
+ 
+dom_info_i(69,[ 'Serial' ]).
+dom_info_i(88,[ 'TipoParametro' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [ 19 ],[ 14,15,18 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,2,2).
+b_group_i(2,1,lit,0,3,3).
+b_group_i(1,3,lit,0,10,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[]).
+b_line_i(2,2,1,cmd,3,[ t('',121,2,0) ]).
+b_line_i(6,2,1,cmd,3,[]).
+b_line_i(7,2,1,cmd,3,[ t('',107,3,0),t('Valor',23,3,0),t(=,10,3,0),t('Pedidototal',23,3,0),t(*,6,3,0),t('(',0,3,0),t(19,2,3,0),t(/,6,3,0),t('100',3,3,0),t(')',4,3,0) ]).
+b_line_i(8,2,1,cmd,3,[]).
+b_line_i(9,2,1,cmd,3,[ t('',128,3,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+ 
+att_prop_i(2,19,'ExternalName','ParametroPercentual',d).
+att_prop_i(2,19,'ExternalNamespace','FMX',d).
+att_prop_i(2,19,'EmptyAsNull','Yes',d).
+att_prop_i(2,19,idBasedOn,'',d).
+att_prop_i(2,19,'AUTONUMBER','0',d).
+att_prop_i(2,19,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,19,'AttRegEx','',d).
+att_prop_i(2,19,'AttValidationFailedMsg','',d).
+att_prop_i(2,19,'FullName','ParametroPercentual',v).
+att_prop_i(2,18,'ExternalName','ParametroValor',d).
+att_prop_i(2,18,'ExternalNamespace','FMX',d).
+att_prop_i(2,18,'EmptyAsNull','Yes',d).
+att_prop_i(2,18,idBasedOn,'',d).
+att_prop_i(2,18,'AUTONUMBER','0',d).
+att_prop_i(2,18,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,18,'AttRegEx','',d).
+att_prop_i(2,18,'AttValidationFailedMsg','',d).
+att_prop_i(2,18,'FullName','ParametroValor',v).
+att_prop_i(2,15,'ExternalName','ParametroDtVigenciaFim',d).
+att_prop_i(2,15,'ExternalNamespace','FMX',d).
+att_prop_i(2,15,'EmptyAsNull','Yes',d).
+att_prop_i(2,15,idBasedOn,'',d).
+att_prop_i(2,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,15,'AttRegEx','',d).
+att_prop_i(2,15,'AttValidationFailedMsg','',d).
+att_prop_i(2,15,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,15,'FullName','ParametroDtVigenciaFim',v).
+att_prop_i(2,14,'ExternalName','ParametroDtVigenciaIni',d).
+att_prop_i(2,14,'ExternalNamespace','FMX',d).
+att_prop_i(2,14,'EmptyAsNull','Yes',d).
+att_prop_i(2,14,idBasedOn,'',d).
+att_prop_i(2,14,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,14,'AttRegEx','',d).
+att_prop_i(2,14,'AttValidationFailedMsg','',d).
+att_prop_i(2,14,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,14,'FullName','ParametroDtVigenciaIni',v).
+att_prop_i(2,13,'ExternalName','ParametroID',d).
+att_prop_i(2,13,'ExternalNamespace','FMX',d).
+att_prop_i(2,13,'EmptyAsNull','Yes',d).
+att_prop_i(2,13,idBasedOn,69,v).
+att_prop_i(2,13,'AUTONUMBER','-1',d).
+att_prop_i(2,13,'AUTONUMBER_START','1',d).
+att_prop_i(2,13,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,13,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,13,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,13,'AttRegEx','',d).
+att_prop_i(2,13,'AttValidationFailedMsg','',d).
+att_prop_i(2,13,'FullName','ParametroID',v).
+ 
+ 
+tbl_att_prop_i(2,3,13,'AllowNulls',n).
+tbl_att_prop_i(2,3,13,'AUTONUMBER',y).
+tbl_att_prop_i(2,3,14,'AllowNulls',n).
+tbl_att_prop_i(2,3,15,'AllowNulls',n).
+tbl_att_prop_i(2,3,18,'AllowNulls',n).
+tbl_att_prop_i(2,3,19,'AllowNulls',n).
+ 
+var_prop_i(2,'Pedidodt',idBasedOn,'',v).
+var_prop_i(2,'Pedidototal',idBasedOn,'',v).
+var_prop_i(2,'Pedidoretirada',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,39,'PRC_CALCULADESCFRETE','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

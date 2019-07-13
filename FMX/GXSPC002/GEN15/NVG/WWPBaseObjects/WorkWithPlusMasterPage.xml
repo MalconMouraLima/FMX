@@ -1,0 +1,34 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_2-131213</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>21</ObjId>
+<ObjName>WWPBaseObjects.WorkWithPlusMasterPage</ObjName>
+<ObjDesc>Master Page</ObjDesc>
+<ObjPgmName>WWPBaseObjects.WorkWithPlusMasterPage</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>Ddo_adminag.Onoptionclicked</EventName></Event>
+<Event>
+<EventName>'DoShowMenu'</EventName></Event>
+<Event>
+<EventName>'DO ACTION'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>Refresh</EventName></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

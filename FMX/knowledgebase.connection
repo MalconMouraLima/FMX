@@ -1,0 +1,10 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_FMX</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>CETIF-478110</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>C:\Models\FMX</Directory>
+	<DataFile>GX_KB_FMX.mdf</DataFile>
+	<LogFile>GX_KB_FMX_log.ldf</LogFile>
+	<HostName>CETIF-478110</HostName>
+</ConnectionInformation>

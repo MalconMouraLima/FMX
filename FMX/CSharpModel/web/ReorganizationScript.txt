@@ -1,0 +1,5 @@
+ALTER TABLE [Pedido] ADD [PedidoDescontoFrete]  money NOT NULL CONSTRAINT PedidoDescontoFretePedido_DEFAULT DEFAULT convert(int, 0), [PedidoTotal]  money NOT NULL CONSTRAINT PedidoTotalPedido_DEFAULT DEFAULT convert(int, 0)
+ALTER TABLE [Pedido] DROP CONSTRAINT PedidoDescontoFretePedido_DEFAULT
+UPDATE [Pedido] SET [PedidoTotal]=T.[PedidoTotal] FROM (SELECT T1.[PedidoId], COALESCE( T2.[PedidoTotal], 0) AS PedidoTotal FROM ([Pedido] T1 LEFT JOIN (SELECT COALESCE( T4.[GXC1], 0) AS PedidoTotal, T3.[PedidoId] FROM ([Pedido] T3 LEFT JOIN (SELECT SUM(T6.[ProdutoValor] * CAST(T5.[PedidoItemQtd] AS decimal( 22, 10))) AS GXC1, T5.[PedidoId] FROM ([PedidoItem] T5 INNER JOIN [Produto] T6 ON T6.[ProdutoId] = T5.[ProdutoId]) GROUP BY T5.[PedidoId] ) T4 ON T4.[PedidoId] = T3.[PedidoId]) ) T2 ON T2.[PedidoId] = T1.[PedidoId])) T WHERE [Pedido].PedidoId= T.PedidoId
+ALTER TABLE [Pedido] DROP CONSTRAINT PedidoTotalPedido_DEFAULT
+
